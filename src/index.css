@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Nav */
+
+.header .nav-item {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: royalblue;
+}
+
+/* Home Page */
+
+.home {
+  background-color: #888;
+  height: calc(100vh - 60px);
+  padding: 50px;
+}
+
+.practice-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 923px;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.practice-list > section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding: 20px;
+  width: 60%;
+}
+
+/* FlashCardItem */
+
+.practice-list .card-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 20px;
+  margin-top: 20px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.practice-list .card-item .icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.practice-list .card-item .icon:hover {
+  color: tomato;
+}
+
+/* AddCard   */
+
+.card-form-heading {
+  font-size: 24px;
+}
+
+.add-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  background: #888;
+}
+
+.add-list-item > div {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 20px;
+  background: white;
+}
+
+.add-list-item > div > * {
+  padding: 10px 5px;
+  margin: 5px;
+}
+
+.add-list-item > div > button {
+  background-color: royalblue;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.add-list-item > div > button:disabled {
+  background-color: royalblue;
+  color: #ddd;
+}
+
+/* Practice Page CSS */
+
+#PracticePage {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  background-color: #888;
+}
+
+#PracticePage > div {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer {
+  width: 800px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cardContainer .move-btn {
+  border: none;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 100px;
+  color: white;
+  background-color: rgb(46, 46, 46);
+  cursor: pointer;
+}
+
+.progress-container > progress {
+  width: 550px;
+  height: 30px;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.card-content .card-heading {
+  height: 80px;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-content .card-inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+  color: black;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  width: 80vw;
+  max-width: 260px;
+  height: 300px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
